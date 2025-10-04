@@ -7,11 +7,23 @@ Home: https://github.com/IBM/terratorch
 
 Package license: Apache-2.0
 
-Summary: TerraTorch - The geospatial foundation model fine-tuning toolkit
+Summary: TerraTorch - A model training toolkit for geospatial tasks
 
 Development: https://github.com/IBM/terratorch
 
-TerraTorch - The geospatial foundation model fine-tuning toolkit
+Documentation: https://ibm.github.io/terratorch/
+
+The purpose of this package is to build a flexible fine-tuning framework for Geospatial Foundation Models (GFMs)
+based on TorchGeo and Lightning which can be employed at different abstraction levels. It supports models from the Prithvi,
+TerraMind, and Granite series as well as models from TorchGeo and timm.
+
+This library provides
+
+1. Ease-of-use and all the functionality from Lightning and TorchGeo.
+2. A modular model factory that combines any backbone with different decoders for full flexibility.
+3. Ready-to-use tasks for image segmentation, pixelwise regression, classification, and more.
+4. Multiple abstraction levels and inference pipelines to power enterprise applications.
+
 
 Current build status
 ====================
@@ -147,5 +159,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Joao-L-S-Almeida](https://github.com/Joao-L-S-Almeida/)
 * [@giswqs](https://github.com/giswqs/)
+* [@romeokienzler](https://github.com/romeokienzler/)
 
