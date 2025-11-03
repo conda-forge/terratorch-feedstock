@@ -11,7 +11,7 @@ source:
   sha256: 0aaf58103c6eea7401befe167d730a2659d8fe7f54e357b651cf4bae9724e0fb
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv 
   entry_points:
@@ -71,10 +71,10 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/IBM/terratorch
+  home: https://github.com/terrastackai/terratorch
   summary: TerraTorch - A model training toolkit for geospatial tasks
-  doc_url: https://ibm.github.io/terratorch/
-  dev_url: https://github.com/IBM/terratorch
+  doc_url: https://terrastackai.github.io/terratorch/
+  dev_url: https://github.com/terrastackai/terratorch
   license: Apache-2.0
   license_file: LICENSE
   description: | 

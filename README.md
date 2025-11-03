@@ -3,15 +3,15 @@ About terratorch-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/terratorch-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/IBM/terratorch
+Home: https://github.com/terrastackai/terratorch
 
 Package license: Apache-2.0
 
 Summary: TerraTorch - A model training toolkit for geospatial tasks
 
-Development: https://github.com/IBM/terratorch
+Development: https://github.com/terrastackai/terratorch
 
-Documentation: https://ibm.github.io/terratorch/
+Documentation: https://terrastackai.github.io/terratorch/
 
 The purpose of this package is to build a flexible fine-tuning framework for Geospatial Foundation Models (GFMs)
 based on TorchGeo and Lightning which can be employed at different abstraction levels. It supports models from the Prithvi,
