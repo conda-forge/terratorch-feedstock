@@ -3,7 +3,7 @@ About terratorch-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/terratorch-feedstock/blob/main/LICENSE.txt)
 
-Home: https://terrastackai.com/IBM/terratorch
+Home: https://github.com/terrastackai/terratorch
 
 Package license: Apache-2.0
 
