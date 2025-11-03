@@ -71,10 +71,10 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/IBM/terratorch
+  home: https://github.com/terrastackai/terratorch
   summary: TerraTorch - A model training toolkit for geospatial tasks
-  doc_url: https://ibm.github.io/terratorch/
-  dev_url: https://github.com/IBM/terratorch
+  doc_url: https://terrastackai.github.io/terratorch/
+  dev_url: https://github.com/terrastackai/terratorch
   license: Apache-2.0
   license_file: LICENSE
   description: | 
