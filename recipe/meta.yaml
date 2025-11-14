@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/terratorch-{{ version }}.tar.gz
-  sha256: 0aaf58103c6eea7401befe167d730a2659d8fe7f54e357b651cf4bae9724e0fb
+  sha256: 5419ec9886226a540d11f427294bdd9a572bfbb940a9c7e358a911f13f6eb7e4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv 
   entry_points:
@@ -55,6 +55,8 @@ requirements:
     - hdf5plugin
     - h5netcdf
     - pytest-sugar
+    - tensorboard
+    - wandb
 test:
   imports:
     - terratorch
