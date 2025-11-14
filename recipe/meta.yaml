@@ -1,5 +1,5 @@
 {% set name = "terratorch" %}
-{% set version = "1.1" %}
+{% set version = "1.1.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -11,7 +11,7 @@ source:
   sha256: 0aaf58103c6eea7401befe167d730a2659d8fe7f54e357b651cf4bae9724e0fb
 
 build:
-  number: 2
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv 
   entry_points:
@@ -40,9 +40,9 @@ requirements:
     - numba
     - mlflow
     - lightning
-    - segmentation-models-pytorch <=0.4
+    - segmentation-models-pytorch ==0.5
     - jsonargparse
-    - torchgeo >=0.7.0
+    - torchgeo >=0.7.0,<0.7.2
     - einops
     - timm >=1.0.15
     - pycocotools
