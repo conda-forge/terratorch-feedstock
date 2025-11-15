@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv 
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - terratorch = terratorch.__main__:main
   #skip: true  # [win]
@@ -79,7 +79,7 @@ about:
   dev_url: https://github.com/terrastackai/terratorch
   license: Apache-2.0
   license_file: LICENSE
-  description: | 
+  description: |
     The purpose of this package is to build a flexible fine-tuning framework for Geospatial Foundation Models (GFMs)
     based on TorchGeo and Lightning which can be employed at different abstraction levels. It supports models from the Prithvi,
     TerraMind, and Granite series as well as models from TorchGeo and timm.
