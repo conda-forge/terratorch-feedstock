@@ -162,4 +162,5 @@ Feedstock Maintainers
 * [@Joao-L-S-Almeida](https://github.com/Joao-L-S-Almeida/)
 * [@giswqs](https://github.com/giswqs/)
 * [@romeokienzler](https://github.com/romeokienzler/)
+* [@weiji14](https://github.com/weiji14/)
 
