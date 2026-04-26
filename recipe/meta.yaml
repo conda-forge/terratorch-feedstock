@@ -1,5 +1,5 @@
 {% set name = "terratorch" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/terratorch-{{ version }}.tar.gz
-  sha256: 08972bd5866d15d5e0bca0db6ef5db41a97ced5b407426b856c2658291e333be
+  sha256: 7e3c4a82ffa54c7317d0fd964103acbedf4b4ffd627c7ddf6b1d63c048cd70f6
 
 build:
   number: 0
@@ -24,6 +24,9 @@ requirements:
     - setuptools
     - pip
   run:
+    - pyarrow
+    - rich
+    - tacoreader ==0.5.6
     - diffusers
     - numpy >=2.2
     - scikit-image
@@ -54,7 +57,7 @@ requirements:
     - huggingface_hub
     - tifffile
     - python-box
-    - wandb
+    - wandb >=0.18.0
     - termcolor
     - numba
     - hdf5plugin
