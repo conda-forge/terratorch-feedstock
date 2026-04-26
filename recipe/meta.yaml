@@ -1,5 +1,5 @@
 {% set name = "terratorch" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.4" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/terratorch-{{ version }}.tar.gz
-  sha256: 08972bd5866d15d5e0bca0db6ef5db41a97ced5b407426b856c2658291e333be
+  sha256: fbf867ba3b42cd355b4e8648d53b23f1c979264647d3dd72e9f694f3764d21d5
 
 build:
   number: 0
@@ -24,6 +24,9 @@ requirements:
     - setuptools
     - pip
   run:
+    - pyarrow
+    - rich
+    - tacoreader ==0.5.6
     - diffusers
     - numpy >=2.2
     - scikit-image
@@ -45,7 +48,7 @@ requirements:
     - numba
     - mlflow
     - lightning >=2.6.0
-    - segmentation-models-pytorch
+    - segmentation-models-pytorch >=0.5.0
     - jsonargparse
     - torchgeo
     - einops
@@ -54,7 +57,7 @@ requirements:
     - huggingface_hub
     - tifffile
     - python-box
-    - wandb
+    - wandb >=0.18.0
     - termcolor
     - numba
     - hdf5plugin
