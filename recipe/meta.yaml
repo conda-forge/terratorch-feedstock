@@ -1,5 +1,5 @@
 {% set name = "terratorch" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.10" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/terratorch-{{ version }}.tar.gz
-  sha256: 08972bd5866d15d5e0bca0db6ef5db41a97ced5b407426b856c2658291e333be
+  sha256: 6a47d6ecec1992e2f030b6f8d0b87482ddc54766abd2e6e103f9991ee54517f4
 
 build:
   number: 0

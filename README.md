@@ -29,10 +29,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26633&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/terratorch-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/terratorch-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/terratorch-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -163,7 +164,4 @@ Feedstock Maintainers
 * [@giswqs](https://github.com/giswqs/)
 * [@romeokienzler](https://github.com/romeokienzler/)
 * [@weiji14](https://github.com/weiji14/)
-
-
-<!-- dummy commit to enable rerendering -->
 
