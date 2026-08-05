@@ -3,15 +3,15 @@ About terratorch-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/terratorch-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/terrastackai/terratorch
+Home: https://torchgeo.org/terratorch
 
 Package license: Apache-2.0
 
-Summary: TerraTorch - A model training toolkit for geospatial tasks
+Summary: TerraTorch - The geospatial foundation model fine-tuning toolkit
 
-Development: https://github.com/terrastackai/terratorch
+Development: https://github.com/torchgeo/terratorch
 
-Documentation: https://terrastackai.github.io/terratorch/
+Documentation: https://torchgeo.org/terratorch
 
 The purpose of this package is to build a flexible fine-tuning framework for Geospatial Foundation Models (GFMs)
 based on TorchGeo and Lightning which can be employed at different abstraction levels. It supports models from the Prithvi,
@@ -24,15 +24,15 @@ This library provides
 3. Ready-to-use tasks for image segmentation, pixelwise regression, classification, and more.
 4. Multiple abstraction levels and inference pipelines to power enterprise applications.
 
-
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26633&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/terratorch-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/terratorch-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/terratorch-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>

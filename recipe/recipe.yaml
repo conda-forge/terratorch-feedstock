@@ -1,0 +1,102 @@
+schema_version: 1
+
+context:
+  name: terratorch
+  version: "1.2.10"
+  python_min: "3.11"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/terratorch-${{ version }}.tar.gz
+  sha256: 6a47d6ecec1992e2f030b6f8d0b87482ddc54766abd2e6e103f9991ee54517f4
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+  python:
+    entry_points:
+      - terratorch = terratorch.__main__:main
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools
+    - pip
+  run:
+    - albucore
+    - albumentations
+    - diffusers
+    - einops
+    - geopandas
+    - h5py
+    - huggingface_hub
+    - jsonargparse >=4.40.0
+    - lightly ==1.5.22
+    - lightning >=2.6.0
+    - numpy >=2.2
+    - pyarrow
+    - pycocotools
+    - python >=${{ python_min }}
+    - python-box
+    - pytorch >2.0
+    - rasterio
+    - rich
+    - rioxarray
+    - scikit-image
+    - scikit-learn >=1.3.2
+    - segmentation-models-pytorch >=0.5.0
+    - tensorboard
+    - termcolor
+    - tifffile
+    - timm >=1.0.15
+    - torchgeo
+    - torchmetrics
+    - torchvision
+    - tqdm
+
+tests:
+  - python:
+      imports:
+        - terratorch
+        - terratorch.models
+        - terratorch.models.backbones
+        - terratorch.datamodules
+        - terratorch.datasets
+        - terratorch.samplers
+      pip_check: true
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+    script:
+      - terratorch --help
+
+about:
+  homepage: https://torchgeo.org/terratorch
+  summary: TerraTorch - The geospatial foundation model fine-tuning toolkit
+  documentation: https://torchgeo.org/terratorch
+  repository: https://github.com/torchgeo/terratorch
+  license: Apache-2.0
+  license_file: LICENSE
+  description: |
+    The purpose of this package is to build a flexible fine-tuning framework for Geospatial Foundation Models (GFMs)
+    based on TorchGeo and Lightning which can be employed at different abstraction levels. It supports models from the Prithvi,
+    TerraMind, and Granite series as well as models from TorchGeo and timm.
+
+    This library provides
+
+    1. Ease-of-use and all the functionality from Lightning and TorchGeo.
+    2. A modular model factory that combines any backbone with different decoders for full flexibility.
+    3. Ready-to-use tasks for image segmentation, pixelwise regression, classification, and more.
+    4. Multiple abstraction levels and inference pipelines to power enterprise applications.
+
+extra:
+  recipe-maintainers:
+    - Joao-L-S-Almeida
+    - giswqs
+    - romeokienzler
+    - weiji14
