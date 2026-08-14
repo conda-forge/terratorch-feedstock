@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: terratorch
-  version: "1.2.10"
+  version: "1.2.11"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/terratorch-${{ version }}.tar.gz
-  sha256: 6a47d6ecec1992e2f030b6f8d0b87482ddc54766abd2e6e103f9991ee54517f4
+  sha256: 48ea76650532508aacd6bddf2be2a1d4bcbd2c26ae45a78133f5501774ec7a7c
 
 build:
   number: 0
