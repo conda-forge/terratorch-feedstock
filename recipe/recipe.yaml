@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: terratorch
-  version: "1.2.11"
-  python_min: "3.11"
+  version: 1.2.12
+  python_min: '3.12'
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/terratorch-${{ version }}.tar.gz
-  sha256: 48ea76650532508aacd6bddf2be2a1d4bcbd2c26ae45a78133f5501774ec7a7c
+  sha256: 835c441ba7c317b40263de1de8f82e46a07047df867453d9b44a5b9d0d7bcb99
 
 build:
   number: 0
@@ -53,11 +53,10 @@ requirements:
     - termcolor
     - tifffile
     - timm >=1.0.15
-    - torchgeo
+    - torchgeo >=0.9.0,<0.10
     - torchmetrics
     - torchvision
     - tqdm
-
 tests:
   - python:
       imports:
@@ -68,7 +67,9 @@ tests:
         - terratorch.datasets
         - terratorch.samplers
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
